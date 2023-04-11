@@ -29,18 +29,18 @@ img {
 p {
   text-align: center;
   font-weight: 500;
+}
 
-  #issueTitle {
-    font-size: 18px;
-    margin-top: 0;
-    margin-bottom: 18px;
-  }
+p#issueTitle {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
 
-  .buy {
-    font-size: 15px;
-    padding-top: 3px;
-    margin-bottom: 15px;
-  }
+p.buy {
+  font-size: 15px;
+  padding-top: 3px;
+  margin-bottom: 15px;
 }
 
 .white-text {
