@@ -1,5 +1,23 @@
-div {
+* {
+  box-sizing: border-box;
+}
+
+div.container {
   width: 100vw;
-  height: 88px;
-  background-color: rgba($color: red, $alpha: 0.2);
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+div.logo img {
+  width: 260px;
+}
+
+div.email a {
+  line-height: 1.5;
+  font-size: 18px;
+  font-weight: 550;
+  text-decoration: none;
+  color: #251d20;
 }

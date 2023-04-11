@@ -1,5 +1,23 @@
-<div class="container">
-  <div class="content">
-    noob
-  </div>
+<div class="container" (scroll)="onScroll($event)">
+  <ng-container *ngFor="let item of list">
+    <div [ngStyle]="{'background-color': item.color }" class="content" [id]="item.issue">
+      <div class="actual-content">
+        <img [src]="item.src" [alt]="item.issue">
+        <p id="issueTitle">Issue #{{item.issue}}</p>
+        <p class="buy" [ngStyle]="{'color': item.textColor}"><a href="">BUY HERE</a></p>
+        <p class="buy">or in <span [ngStyle]="{'color': item.textColor}">selected stores</span>.</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div class="list">
+  <ul>
+    <li>Issue #6</li>
+    <li>Issue #5</li>
+    <li>Issue #4</li>
+    <li>Issue #3</li>
+    <li>Issue #2</li>
+    <li>Issue #1</li>
+  </ul>
 </div>

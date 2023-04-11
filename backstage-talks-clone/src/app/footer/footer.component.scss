@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+div.container {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.text {
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.copyright {
+  margin-bottom: 30px;
+}
+
+.font-weight-bold {
+  font-weight: 500;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-12 {
+  font-size: 12px;
+}
