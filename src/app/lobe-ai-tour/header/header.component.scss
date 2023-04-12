@@ -1,0 +1,44 @@
+header {
+  height: 80px;
+}
+
+.lobe-header {
+  height: 100%;
+  width: 92vw;
+}
+
+.lobe-logo {
+  height: 21px;
+}
+
+.selections {
+  transition: .2s ease-in-out;
+}
+
+.selections:hover {
+  color: #333;
+  transform: translateY(-1px) scale3d(1.03,1.03,1.03);
+}
+
+.download-button {
+  background-color: #04ddb2;
+  height: 48px;
+  width: 129px;
+  
+  transition: .2s ease-in-out;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.download-button:active {
+  transform: scale(0.95);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  // outline: 1px solid limegreen;
+}
