@@ -14,7 +14,8 @@ const routes: Routes = [
   { 
     path: 'backstage-talks-clone', 
     loadChildren: () => import('./backstage-talks-clone/backstage-talks-clone.module').then(m => m.BackstageTalksCloneModule) 
-  }, 
+  },
+  { path: 'lobe-ai-tour', loadChildren: () => import('./lobe-ai-tour/lobe-ai-tour.module').then(m => m.LobeAiTourModule) }, 
 ];
 
 @NgModule({
