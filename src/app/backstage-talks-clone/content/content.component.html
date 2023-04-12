@@ -1,0 +1,22 @@
+<div class="content-container" (scroll)="onScroll()">
+  <ng-container *ngFor="let item of list">
+    <div class="content" [id]="'issue' + item.issue">
+      <div class="actual-content">
+        <img [src]="item.src" [alt]="item.issue">
+        <p id="issueTitle">Issue #{{item.issue}}</p>
+        <p class="buy" [ngStyle]="{'color': item.textColor}"><a href="">BUY HERE</a></p>
+        <p class="buy">or in <span [ngStyle]="{'color': item.textColor}">selected stores</span>.</p>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div class="list">
+  <ul>
+    <li *ngFor="let item of list">
+      <a [href]="'backstage-talks-clone#issue' + item.issue" [ngClass]="{ 'font-weight-500': item.selected }">
+        Issue #{{item.issue}}
+      </a>
+    </li>
+  </ul>
+</div>

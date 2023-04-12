@@ -1,0 +1,40 @@
+<header>
+  <div class="header-inner">
+    <div class="logo-wrapper">
+      <div class="logo-container">
+        <a href=""><img class="logo" src="assets/abstract-clone/svgexport-1.svg" alt="logo"></a>
+      </div>
+      <div class="logo-text">
+        Help Center
+      </div>
+    </div>
+    <div class="small-site-buttons">
+      <div class="small-site-buttons-container">
+        <button class="icon-logo" type="button" (click)="onToggleOption()">
+          <img [src]="showOption ? 'assets/abstract-clone/close-icon.svg' : 'assets/abstract-clone/hamburger-icon.svg'" alt="search">
+        </button>
+        <button class="icon-logo" type="button" (click)="onToggleSearch()">
+          <img src="assets/abstract-clone/search-icon.svg" alt="search">
+        </button>
+      </div>
+    </div>
+    <div class="search"  [ngClass]="{ 'visible' : showSearch }">
+      <div class="search-container">
+        <input type="text" placeholder="Search">
+        <button class="icon-logo" type="button" (click)="onToggleSearch()">
+          <img src="assets/abstract-clone/close-black-icon.svg" alt="search">
+        </button>
+      </div>
+    </div>
+    <div class="site-buttons" [ngClass]="{ 'visible' : showOption }">
+      <div class="site-buttons-container">
+        <a class="sign-in" role="button" href="">
+          Sign in
+        </a>
+        <a class="submit" role="button" href="">
+          Submit a request
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
