@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  menuExpanded = false;
 
+  toggleMenuExpand() {
+    this.menuExpanded = !this.menuExpanded;
+  }
 }

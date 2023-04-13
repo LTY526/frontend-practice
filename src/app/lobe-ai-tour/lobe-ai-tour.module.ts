@@ -5,13 +5,15 @@ import { LobeAiTourRoutingModule } from './lobe-ai-tour-routing.module';
 import { LobeAiTourComponent } from './lobe-ai-tour.component';
 import { HeaderComponent } from './header/header.component';
 import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     LobeAiTourComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,

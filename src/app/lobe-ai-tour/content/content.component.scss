@@ -6,12 +6,16 @@
   color: #333;
 }
 
-.text-80px {
+.content-container {
+  max-width: 1272px;
+}
+
+.title-text {
   font-size: 80px;
 }
 
-.content-container {
-  max-width: 1272px;
+.desc-text {
+  font-size: 32px;
 }
 
 .video-preview {
@@ -51,4 +55,76 @@
 
 ::selection {
   background: #ccfaf1;
+}
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+  .content-container {
+    max-width: 1088px;
+  }
+
+  .title-text {
+    font-size: 64px;
+  }
+
+  .desc-text {
+    font-size: 26px;
+  }
+
+  .train-with-lobe {
+    max-width: 400px;
+  }
+
+  .download-button {
+    height: 50px;
+    width: 168px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 1200px) {
+  .content-container {
+    max-width: 968px;
+  }
+
+  .title-text {
+    font-size: 56px;
+  }
+
+  .desc-text {
+    font-size: 24px;
+  }
+
+  .train-with-lobe {
+    max-width: 400px;
+  }
+
+  .download-button {
+    height: 50px;
+    width: 168px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-container {
+    padding: 0 32px;
+  }
+
+  .title-text {
+    font-size: 38px;
+  }
+
+  .desc-text {
+    font-size: 18px;
+  }
+
+  .train-with-lobe {
+    max-width: 300px;
+  }
+
+  .download-button {
+    height: 42px;
+    width: 148px;
+    font-size: 18px;
+  }
 }

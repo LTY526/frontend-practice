@@ -1,18 +1,43 @@
-<header class="w-full">
+<header class="sticky top-0 w-full backdrop-blur-md">
 	<div class="lobe-header mx-auto flex justify-between">
 		<div class="my-auto">
 			<img class="lobe-logo" src="assets/lobe/logo.svg" alt="logo" />
 		</div>
-		<div class="my-auto flex justify-center">
+		<div
+			class="small-selections-container max-[800px]:w-full min-[800px]:my-auto min-[800px]:flex min-[800px]:justify-center"
+			[ngClass]="{ 'small-selections-container-visible': menuExpanded }"
+		>
 			<a class="selections mx-6 font-medium text-neutral-500" href="">Overview</a>
 			<a class="selections mx-6 font-medium text-neutral-500" href="">Examples</a>
 			<a class="selections mx-6 font-medium text-neutral-800" href="">Tour</a>
 			<a class="selections mx-6 font-medium text-neutral-500" href="">Blog</a>
 			<a class="selections mx-6 font-medium text-neutral-500" href="">Help</a>
+			<div class="my-10 px-5 min-[800px]:hidden">
+				<button
+					class="download-button rounded-3xl font-bold text-white"
+					style="width: 100%"
+					type="button"
+				>
+					Download
+				</button>
+			</div>
 		</div>
 		<div class="my-auto">
-			<button class="download-button rounded-3xl font-bold text-white" type="button">
+			<button
+				class="download-button rounded-3xl font-bold text-white max-[800px]:hidden"
+				type="button"
+			>
 				Download
+			</button>
+			<button
+				class="rounded-full p-1 hover:bg-gray-200 min-[800px]:hidden"
+				type="button"
+				(click)="toggleMenuExpand()"
+			>
+				<img
+					[src]="!menuExpanded ? 'assets/lobe/hamburger-icon.svg' : 'assets/lobe/close-icon.svg'"
+					alt="menu"
+				/>
 			</button>
 		</div>
 	</div>

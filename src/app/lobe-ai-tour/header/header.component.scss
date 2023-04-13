@@ -1,5 +1,6 @@
 header {
   height: 80px;
+  background-color: hsla(0, 0%, 100%, 0.8);
 }
 
 .lobe-header {
@@ -11,13 +12,36 @@ header {
   height: 21px;
 }
 
+@media (max-width: 800px) {
+  .small-selections-container {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    z-index: 10;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    border-top: 1px solid #efefef;
+    a {
+      font-size: 20px;
+      padding: 18px 10px;
+    }
+  }
+}
+
+.small-selections-container-visible {
+  display: flex;
+}
+
 .selections {
   transition: .2s ease-in-out;
 }
 
-.selections:hover {
-  color: #333;
-  transform: translateY(-1px) scale3d(1.03,1.03,1.03);
+@media (min-width: 800px) {
+  .selections:hover {
+    color: #333;
+    transform: translateY(-1px) scale3d(1.03,1.03,1.03);
+  }
 }
 
 .download-button {
@@ -28,11 +52,11 @@ header {
 }
 
 .download-button:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .download-button:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
 * {
