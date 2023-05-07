@@ -6,7 +6,7 @@ I recreate some real life websites to practice my frontend skills.
 
 1. [Abstract](https://help.abstract.com/hc/en-us)
 2. [Backstage Talks](https://backstagetalks.com/)
-3. [Lobe AI](https://www.lobe.ai/tour) (Work-in-Progress)
+3. [Lobe AI](https://www.lobe.ai/tour)
 
 ## Live view of my recreation
 
