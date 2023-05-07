@@ -10,7 +10,7 @@ I recreate some real life websites to practice my frontend skills.
 
 ## Live view of my recreation
 
-Currently not available
+Click [here](https://lty526.github.io/frontend-practice/)
 
 ## Disclaimer
 
